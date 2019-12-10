@@ -1,34 +1,33 @@
 $font: "Montserrat", sans-serif;
 
-.text-field__label {
-  font-style: normal;
-  font-weight: bold;
-  display: inline-block;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #1f2041;
-  margin-bottom: 5px;
-}
-
-.text-field__input {
-  font-family: $font;
-  width: 290px;
-  height: 16px;
-  font-size: 14px;
-  line-height: 24px;
-  border: 1px solid #cecece;
-  border-radius: 4px;
-  padding: 13px 14px 13px 14px;
-  color: rgba(31, 32, 65, 0.5);
-}
-
-.text-field__input::placeholder {
-  color: rgba(31, 32, 65, 0.25);
-}
-
-.text-field__input:hover,
-.text-field__input:focus {
-  border-color: rgba(31, 32, 65, 0.25);
-  outline: none;
+.text-field {
+  &__name {
+    font-family: $font;
+    font-style: normal;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1f2041;
+    margin-bottom: 5px;
+  }
+  &__input {
+    font-family: $font;
+    width: 290px;
+    height: 16px;
+    font-size: 14px;
+    line-height: 24px;
+    border: 1px solid #cecece;
+    border-radius: 4px;
+    padding: 13px 14px 13px 14px;
+    &:hover,
+    &:focus {
+      border-color: rgba(31, 32, 65, 0.5);
+      outline: none;
+    }
+    &::placeholder {
+      color: rgba(31, 32, 65, 0.25);
+    }
+  }
 }

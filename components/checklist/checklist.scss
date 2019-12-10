@@ -1,57 +1,57 @@
-.checklist__checkbox {
-  display: none;
-}
+.checklist {
+  &__name {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 16px;
+  }
 
-.checklist__name {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  margin-bottom: 16px;
-}
+  &__checkbox {
+    display: none;
+    & + label::after {
+      content: none;
+    }
+    &:checked {
+      & + label::after {
+        content: url("./checkmark.svg");
+      }
+      & + label::before {
+        border-color: #bc9cff;
+      }
+    }
+  }
 
-.checklist__label {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: rgba(31, 32, 65, 0.5);
-  position: relative;
-  display: inline-block;
-  padding-left: 30px;
-  margin-bottom: 11px;
-}
+  &__label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.5);
+    position: relative;
+    display: inline-block;
+    padding-left: 30px;
+    margin-bottom: 11px;
 
-.checklist__label::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: -1px;
-  vertical-align: middle;
-  width: 20px;
-  height: 20px;
-  background: #ffffff;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 4px;
-}
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: -1px;
+      width: 20px;
+      height: 20px;
+      background: #ffffff;
+      border: 1px solid rgba(31, 32, 65, 0.25);
+      box-sizing: border-box;
+      border-radius: 4px;
+    }
 
-.checklist__label::after {
-  content: "";
-  position: absolute;
-  left: 6px;
-  top: 5px;
-  height: 4px;
-  width: 6px;
-  border-left: 2px solid;
-  border-bottom: 2px solid;
-  transform: rotate(-45deg);
-}
-
-.checklist input[type="checkbox"] + label::after {
-  content: none;
-}
-
-.checklist input[type="checkbox"]:checked + label::after {
-  content: "";
+    &::after {
+      position: absolute;
+      left: 5px;
+      top: 0px;
+      height: 4px;
+      width: 6px;
+    }
+  }
 }
