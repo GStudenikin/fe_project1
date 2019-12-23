@@ -4,4 +4,5 @@ import "./components/checklist/checklist.scss";
 import "./components/radio/radio.scss";
 import "./components/toggle/toggle.scss";
 import "./components/text-field/text-field.scss";
+import "./components/subscribition-text-field/subscribition-text-field.scss";
 import "./components/bullet-list/bullet-list.scss";

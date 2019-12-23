@@ -16,6 +16,8 @@
     "sass": "^1.23.7"
   },
   "dependencies": {
-    "style": "0.0.3"
+    "material-design-icons": "^3.0.1",
+    "style": "0.0.3",
+    "webkit-npm": "^3.1.1"
   }
 }

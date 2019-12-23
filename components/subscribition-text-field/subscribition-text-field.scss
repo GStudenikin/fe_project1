@@ -1,0 +1,51 @@
+$font: "Montserrat", sans-serif;
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+.subscribition-text-field {
+  &__button {
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    width: 44px;
+    height: 44px;
+    left: -44px;
+    top: 7px;
+    font-family: "Material Icons";
+    font-size: 24px;
+    background-color: white;
+    border: none;
+    color: transparent;
+    background: -webkit-linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &__name {
+    font-family: $font;
+    font-style: normal;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1f2041;
+    margin-bottom: 5px;
+  }
+  &__input {
+    font-family: $font;
+    width: 237px;
+    height: 16px;
+    font-size: 14px;
+    line-height: 24px;
+    border: 1px solid #cecece;
+    border-radius: 4px;
+    padding: 13px 14px 13px 14px;
+    &:hover,
+    &:focus {
+      border-color: rgba(31, 32, 65, 0.5);
+      outline: none;
+    }
+    &::placeholder {
+      color: rgba(31, 32, 65, 0.25);
+    }
+  }
+}
