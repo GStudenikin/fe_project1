@@ -1,0 +1,11 @@
+//- how to use:
+    - var cl = ["asd", "asad", "sas"]
+    +checklist("submit", cl)
+
+mixin checklist(action, items)
+    form.checklist(action=action)
+        each val, index in items
+            if index > 0
+                br
+            input.checklist__checkbox(type="checkbox" name="checkbox_"+index id="checkbox_"+index)
+            label.checklist__label(for="checkbox_"+index)=val

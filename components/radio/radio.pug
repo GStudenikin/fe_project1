@@ -1,0 +1,9 @@
+//- how to use:
+    - var radio = ["asd", "sad", "das"]
+    +radio("submit", "one", radio)
+
+mixin radio(action, name, items)
+    form.radio(action=action)
+        each val, index in items
+            input.radio__button(type="radio" name=name id="rb_"+index)
+            label.radio__label(for="rb_"+index)=val
