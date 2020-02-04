@@ -1,0 +1,42 @@
+.rating {
+  width: 120px;
+  &:not(:checked) {
+    > .rating__button {
+      display: none;
+    }
+
+    > .rating__label {
+      float: right;
+      cursor: pointer;
+      font-size: 24px;
+      line-height: 20px;
+      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      &::before {
+        content: "star_border";
+      }
+
+      &:hover,
+      &:hover ~ .rating__label {
+        background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        &:before {
+          content: "star";
+        }
+      }
+    }
+  }
+
+  > .rating__button:checked {
+    & ~ .rating__label {
+      &:before {
+        content: "star";
+      }
+    }
+  }
+}
