@@ -9,4 +9,9 @@ import "./components/bullet-list/bullet-list.scss";
 import "./components/feature/feature.scss";
 import "./components/rating/rating.scss";
 import "./components/buttons/button-colored.scss";
-import "./components/buttons/button-border.scss";
+//import "./components/buttons/button-border.scss";
+
+import "./elements/header/header.scss";
+import "./elements/header/__logo/logo.scss";
+import "./elements/header/__menu/menu.scss";
+import "./elements/header/__button/button.scss";
