@@ -6,3 +6,7 @@ import "./components/toggle/toggle.scss";
 import "./components/text-field/text-field.scss";
 import "./components/subscribition-text-field/subscribition-text-field.scss";
 import "./components/bullet-list/bullet-list.scss";
+import "./components/feature/feature.scss";
+import "./components/rating/rating.scss";
+import "./components/buttons/button-colored.scss";
+import "./components/buttons/button-border.scss";
