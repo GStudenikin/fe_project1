@@ -1,0 +1,60 @@
+.footer {
+  &__navbar {
+    position: absolute;
+    left: 0;
+    bottom: -372px;
+    width: 100%;
+    height: 372px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+    &__info {
+      width: 260px;
+      margin-top: 100px;
+      margin-left: 140px;
+      &__logo {
+        margin-bottom: 20px;
+      }
+      &__text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(31, 32, 65, 0.75);
+      }
+    }
+  }
+  &__bottom-panel {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    left: 0;
+    bottom: -442px;
+    width: 100%;
+    background-color: #ffffff;
+    height: 70px;
+    border-top: 1px solid #e5e5e5;
+
+    &__copyright {
+      margin-left: 140px;
+      margin-right: auto;
+      display: inline-block;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      color: rgba(31, 32, 65, 0.75);
+    }
+    &__social {
+      display: inline-block;
+      margin-right: 140px;
+      &__link {
+        text-decoration: none;
+        margin-right: 20px;
+      }
+    }
+  }
+}
