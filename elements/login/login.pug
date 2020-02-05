@@ -1,0 +1,13 @@
+include __text-field/text-field.pug
+include __button/button.pug
+
+div.login
+    h1.login__label Войти
+    div.login__fields
+        +text-field("Email", email)
+        +text-field("Пароль", email)
+    +button-colored("#login", "Войти")
+    div.login__signup
+        div.login__signup__text Нет аккаунта на Toxin?
+        +button-border("#signup", "Создать")
+    

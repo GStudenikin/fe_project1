@@ -1,0 +1,41 @@
+.login {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  width: 380px;
+  height: 360px;
+  z-index: 1;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 40px;
+  &__label {
+    margin: 0;
+    display: inline-block;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #1f2041;
+    margin-bottom: 20px;
+  }
+  &__signup {
+    position: relative;
+    top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    &__text {
+      display: inline-block;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 18px;
+      color: #000000;
+    }
+  }
+}
