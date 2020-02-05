@@ -4,10 +4,8 @@ html(lang="ru-RU")
         title ТЕСТ
     body
         script(src='./main.js')
-        form(action='submit', method='post')
-        div
-            input.toggle__checkbox(type='checkbox', name="one", value=val, id="one")
-            label.toggle__label(for="one")="Text field"
-
-            
-            
+        include elements/header/header.pug
+        main
+            include elements/login/login.pug
+        include elements/footer/footer.pug
+        
