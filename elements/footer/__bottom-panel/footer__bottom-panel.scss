@@ -1,0 +1,39 @@
+$font: "Montserrat", sans-serif;
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+.footer__bottom-panel {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  left: 0;
+  bottom: -442px;
+  width: 100%;
+  background-color: #ffffff;
+  height: 70px;
+  border-top: 1px solid #e5e5e5;
+
+  &__copyright {
+    margin-left: 140px;
+    margin-right: auto;
+    display: inline-block;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(31, 32, 65, 0.75);
+  }
+  &__social {
+    display: inline-block;
+    margin-right: 140px;
+    &__link {
+      text-decoration: none;
+      margin-right: 20px;
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+}

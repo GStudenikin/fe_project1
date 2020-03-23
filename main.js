@@ -18,4 +18,5 @@ import "./elements/header/__button/button.scss";
 import "./elements/login/__text-field/text-field.scss";
 import "./elements/login/login.scss";
 import "./elements/login/__button/button.scss";
-import "./elements/footer/footer.scss";
+import "./elements/footer/__bottom-panel/footer__bottom-panel.scss";
+import "./elements/footer/__navbar/footer__navbar.scss";
