@@ -1,0 +1,118 @@
+.dropdown {
+  display: inline-block;
+
+  &__expantion {
+    position: relative;
+    top: -1px;
+    width: 266px;
+    height: 119px;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    box-sizing: border-box;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+
+    &__item {
+      display: block;
+      width: 264px;
+      height: 30px;
+      padding-top: 7px;
+      &:first-child {
+        padding-top: 6px;
+      }
+
+      &__text {
+        width: 165px;
+        display: inline-block;
+        position: relative;
+        left: 13px;
+        top: -3px;
+        text-transform: uppercase;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        color: #1f2041;
+      }
+
+      &__button {
+        height: 30px;
+        width: 30px;
+        color: rgba(31, 32, 65, 0.5);
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        box-sizing: border-box;
+        border-radius: 50%;
+        background-color: #ffffff;
+
+        &:first-of-type {
+          margin-right: 0px;
+        }
+      }
+
+      &__counter {
+        position: relative;
+        display: inline-block;
+        top: -3px;
+        width: 33px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+      }
+    }
+
+    &-hidden {
+      display: none;
+    }
+  }
+
+  &__visible {
+    display: flex;
+    flex-direction: row;
+    width: 266px;
+    height: 44px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px 4px 0 0;
+
+    &__button {
+      margin-left: auto;
+      cursor: pointer;
+      font-size: 24px;
+      line-height: 24px;
+      position: relative;
+      height: 42px;
+      width: 42px;
+      border: none;
+      border-radius: 4px 4px 0 0;
+      background-color: white;
+      color: rgba(31, 32, 65, 0.75);
+      outline: none;
+    }
+
+    &__summary {
+      display: block;
+      width: 160px;
+      text-overflow: ellipsis;
+      margin-block-start: 15px;
+      margin-inline-start: 14px;
+      white-space: nowrap;
+      overflow: hidden;
+      font-family: Montserrat;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 10px;
+      color: rgba(31, 32, 65, 0.75);
+    }
+
+    &-expanded {
+      border: 1px solid rgba(31, 32, 65, 0.5);
+      border-bottom: none;
+    }
+  }
+}
