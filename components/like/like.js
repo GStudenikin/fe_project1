@@ -1,7 +1,7 @@
-document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", function (event) {
   var like = document.getElementById("like_id");
 
-  like.addEventListener("click", function() {
+  like.addEventListener("click", function () {
     if (like.classList.contains("like__button")) {
       like.classList.replace("like__button", "like__button__clicked");
       var counter =

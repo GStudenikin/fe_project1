@@ -20,3 +20,5 @@ import "./elements/login/login.scss";
 import "./elements/login/__button/button.scss";
 import "./elements/footer/__bottom-panel/footer__bottom-panel.scss";
 import "./elements/footer/__navbar/footer__navbar.scss";
+import "./components/like/like.scss";
+import "./components/like/like.js";
