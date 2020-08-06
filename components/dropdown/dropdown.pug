@@ -4,18 +4,21 @@ mixin dropdown_rooms
             p.dropdown__visible__summary Количество комнат
             button.dropdown__visible__button.material-icons(id="dropdown-expand") expand_more
         div.dropdown__expantion-hidden(id="dropdown-expantion")
-            div.dropdown__expantion__item 
+            div.dropdown__expantion__item(id="bedroom") 
                 div.dropdown__expantion__item__text спальни
-                button.dropdown__expantion__item__button -
-                span.dropdown__expantion__item__counter 0
-                button.dropdown__expantion__item__button +
-            div.dropdown__expantion__item
+                div.dropdown__expantion__item__menu
+                    button.dropdown__expantion__item__menu__button(id="bedroom_minus") -
+                    span.dropdown__expantion__item__menu__counter(id="bedroom_counter") 0
+                    button.dropdown__expantion__item__menu__button(id="bedroom_plus") +
+            div.dropdown__expantion__item(id="bed")
                 div.dropdown__expantion__item__text кровати
-                button.dropdown__expantion__item__button -
-                span.dropdown__expantion__item__counter 0
-                button.dropdown__expantion__item__button +
-            div.dropdown__expantion__item
+                div.dropdown__expantion__item__menu
+                    button.dropdown__expantion__item__menu__button(id="bed_minus") -
+                    span.dropdown__expantion__item__menu__counter(id="bed_counter") 0
+                    button.dropdown__expantion__item__menu__button(id="bed_plus") +
+            div.dropdown__expantion__item(id="bathroom")
                 div.dropdown__expantion__item__text ванные комнаты
-                button.dropdown__expantion__item__button -
-                span.dropdown__expantion__item__counter 0
-                button.dropdown__expantion__item__button +
+                div.dropdown__expantion__item__menu
+                    button.dropdown__expantion__item__menu__button(id="bathroom_minus") -
+                    span.dropdown__expantion__item__menu__counter(id="bathroom_counter") 0
+                    button.dropdown__expantion__item__menu__button(id="bathroom_plus") +
