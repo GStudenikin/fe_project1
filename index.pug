@@ -1,11 +1,10 @@
+include /components/expandable-checklist/expandable-checklist.pug
+
 doctype html
 html(lang="ru-RU")
     head
         title ТЕСТ
     body
         script(src='./main.js')
-        include elements/header/header.pug
-        main
-            include elements/login/login.pug
-        include elements/footer/footer.pug
+        +expandable-checklist("test", ["asd", "add", "ss"], "action")
         
