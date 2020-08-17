@@ -22,5 +22,5 @@ import "./elements/footer/__bottom-panel/footer__bottom-panel.scss";
 import "./elements/footer/__navbar/footer__navbar.scss";
 import "./components/like/like.scss";
 import "./components/like/like.js";
-import "./components/dropdown/dropdown.scss";
-import "./components/dropdown/dropdown.js";
+import "./components/dropdown-rooms/dropdown-rooms.scss";
+import "./components/dropdown-rooms/dropdown-rooms.js";
