@@ -1,0 +1,12 @@
+//- how to use:
+    var cl = ["asd", "asad", "sas"]
+    name - label of the hiden list
+    +checklist(name, cl, "submit")
+
+mixin expandable-checklist(name, list, action)
+    div.expandable-checklist
+        input.expandable-checklist__show(type="checkbox" id="show" name="show")
+        label.expandable-checklist__name(for="show")=name
+        div.expandable-checklist-menu
+            include /components/checklist/checklist.pug
+            +checklist(action, list)

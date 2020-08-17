@@ -1,0 +1,50 @@
+.expandable-checklist {
+  width: 266px;
+
+  &__name {
+    width: 266px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1f2041;
+    cursor: pointer;
+
+    &::after {
+      margin-right: 10px;
+      display: inline-block;
+      font-family: "Material Icons";
+      font-size: 24px;
+      line-height: 24px;
+      color: rgba(31, 32, 65, 0.5);
+      content: "\e5cf";
+    }
+  }
+
+  &__show {
+    display: none;
+    &:checked {
+      & + .expandable-checklist__name::after {
+        transform: rotate(180deg);
+      }
+
+      & ~ .expandable-checklist-menu {
+        max-height: 100%;
+      }
+
+      & ~ .expandable-checklist__name {
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  &-menu {
+    max-height: 0;
+    overflow: hidden;
+  }
+}
