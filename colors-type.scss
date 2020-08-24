@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap");
+
+$dark100: #1f2041;
+$dark75: rgba(31, 32, 65, 0.75);
+$dark50: rgba(31, 32, 65, 0.5);
+$dark25: rgba(31, 32, 65, 0.25);
+$dark5: rgba(31, 32, 65, 0.05);
+
+$fontMont: "Montserrat", sans-serif;
+$fontQuick: "Quicksand", sans-serif;
+$fontIcon: "Material Icons";
+
+%fontH1 {
+  font-family: $fontQuick;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+%fontH2 {
+  font-family: $fontQuick;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  color: $dark100;
+}
+
+%fontLabel {
+  font-family: $fontMont;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: $dark100;
+}
+
+%fontBody {
+  font-family: $fontMont;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: $dark75;
+}
