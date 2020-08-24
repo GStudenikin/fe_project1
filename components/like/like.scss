@@ -1,3 +1,5 @@
+@import "colors-type.scss";
+
 .like {
   width: 40px;
   height: 20px;
@@ -12,7 +14,7 @@
     position: relative;
     box-sizing: border-box;
     $border: 1px;
-    color: rgba(31, 32, 65, 0.25);
+    color: $dark25;
     background: #ffffff;
     background-clip: padding-box;
     border: solid $border transparent;
@@ -44,7 +46,7 @@
       z-index: -1;
       margin: -$border;
       border-radius: inherit;
-      background-color: rgba(31, 32, 65, 0.25);
+      background-color: $dark25;
     }
 
     &__clicked {
@@ -92,7 +94,7 @@
     position: relative;
     top: 2.5px;
     left: -1px;
-    font-family: Montserrat;
+    font-family: $fontMont;
     font-style: normal;
     font-weight: normal;
     font-size: 10px;

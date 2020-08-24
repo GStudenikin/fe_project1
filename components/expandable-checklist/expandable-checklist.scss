@@ -1,18 +1,14 @@
+@import "colors-type.scss";
+
 .expandable-checklist {
   width: 266px;
 
   &__name {
+    @extend %fontLabel;
     width: 266px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-    color: #1f2041;
     cursor: pointer;
 
     &::after {
@@ -34,6 +30,7 @@
       }
 
       & ~ .expandable-checklist-menu {
+        overflow: visible;
         max-height: 100%;
       }
 

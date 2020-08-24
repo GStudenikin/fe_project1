@@ -1,3 +1,10 @@
+@import "colors-type.scss";
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 .bullet-list {
   list-style-type: none;
   font-style: normal;
@@ -12,10 +19,11 @@
   }
 
   &__item {
-    font-size: 14px;
-    line-height: 24px;
-    color: rgba(31, 32, 65, 0.75);
+    @extend %fontBody;
     margin-bottom: 10px;
+    &:last-of-type {
+      margin-bottom: 0px;
+    }
     &::before {
       display: inline-block;
       position: relative;

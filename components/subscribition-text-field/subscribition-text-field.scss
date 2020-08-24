@@ -1,5 +1,4 @@
-$font: "Montserrat", sans-serif;
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import "colors-type.scss";
 
 .subscribition-text-field {
   &__button {
@@ -10,7 +9,7 @@ $font: "Montserrat", sans-serif;
     height: 44px;
     left: -44px;
     top: 7px;
-    font-family: "Material Icons";
+    font-family: $fontIcon;
     font-size: 24px;
     background-color: white;
     border: none;
@@ -21,18 +20,12 @@ $font: "Montserrat", sans-serif;
     -webkit-text-fill-color: transparent;
   }
   &__name {
-    font-family: $font;
-    font-style: normal;
-    font-weight: bold;
     display: inline-block;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-    color: #1f2041;
     margin-bottom: 5px;
+    @extend %fontLabel;
   }
   &__input {
-    font-family: $font;
+    font-family: $fontMont;
     width: 237px;
     height: 16px;
     font-size: 14px;

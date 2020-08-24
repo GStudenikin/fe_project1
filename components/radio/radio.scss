@@ -1,12 +1,9 @@
+@import "colors-type.scss";
+
 .radio {
   font-style: normal;
   &__name {
-    font-family: Montserrat;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-    color: #1f2041;
+    @extend %fontLabel;
     margin-bottom: 13px;
   }
 
@@ -18,9 +15,10 @@
 
   &__label {
     font-weight: normal;
+    font-family: $fontMont;
     font-size: 14px;
     line-height: 24px;
-    color: rgba(31, 32, 65, 0.5);
+    color: $dark50;
     position: relative;
     display: inline-block;
     padding-left: 30px;
@@ -31,7 +29,7 @@
       width: 20px;
       height: 20px;
       background: #ffffff;
-      border: 1px solid rgba(31, 32, 65, 0.25);
+      border: 1px solid $dark25;
       box-sizing: border-box;
     }
     &::after {
@@ -56,6 +54,6 @@
     border-color: #bc9cff;
   }
   &__button:checked + &__label {
-    color: rgba(31, 32, 65, 0.75);
+    color: $dark75;
   }
 }

@@ -1,8 +1,10 @@
+@import "colors-type.scss";
+
 .button-border {
   display: inline-block;
   align-items: center;
   text-decoration: none;
-  font-family: Montserrat;
+  font-family: $fontMont;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
