@@ -1,0 +1,159 @@
+@import "colors-type.scss";
+
+.calendar {
+  user-select: none;
+  display: inline-block;
+  width: 318px;
+  height: 368px;
+  border: 1px solid $dark25;
+  border-radius: 4px;
+  box-shadow: 0 10px 20px $dark5;
+
+  &__clear-btn {
+    cursor: pointer;
+    display: inline-block;
+    font-family: $fontMont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: rgba(31, 32, 65, 0.5);
+    padding: 0;
+    border: none;
+    background-color: #ffffff;
+    position: absolute;
+    top: 342px;
+    left: 28px;
+  }
+
+  &__accept-btn {
+    cursor: pointer;
+    display: inline-block;
+    font-family: $fontMont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #bc9cff;
+    padding: 0;
+    border: none;
+    background-color: #ffffff;
+    position: absolute;
+    top: 342px;
+    left: 225px;
+  }
+
+  &__month {
+    display: flex;
+    justify-content: space-between;
+    width: 318px;
+    align-items: center;
+    &__current {
+      @extend %fontH2;
+      display: inline-block;
+    }
+    &__btn {
+      cursor: pointer;
+      margin: 19px;
+      width: 24px;
+      height: 24px;
+      font-family: $fontIcon;
+      font-size: 24px;
+      line-height: 20px;
+      padding: 0;
+      border: 0;
+      background: none;
+      outline: none;
+      color: #bc9cff;
+    }
+  }
+
+  &__week {
+    position: relative;
+    top: 11px;
+    left: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 279px;
+    height: 40px;
+    &__day {
+      font-family: $fontMont;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 40px;
+      color: #bc9cff;
+    }
+  }
+
+  &__days-list {
+    margin: 0;
+    width: 280px;
+    height: 200px;
+    position: relative;
+    top: 11px;
+    left: 20px;
+    &__day {
+      cursor: pointer;
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      font-family: $fontMont;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 40px;
+      color: $dark50;
+      text-align: center;
+      align-content: center;
+      &-other {
+        cursor: default;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        font-family: $fontMont;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 40px;
+        color: $dark25;
+        text-align: center;
+        align-content: center;
+      }
+      &-current {
+        cursor: pointer;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+        border-radius: 22px;
+        font-family: $fontMont;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 40px;
+        align-items: center;
+        text-align: center;
+        color: #ffffff;
+      }
+      &-selected {
+        cursor: pointer;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+        border-radius: 22px;
+        font-family: $fontMont;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 40px;
+        align-items: center;
+        text-align: center;
+        color: #ffffff;
+      }
+    }
+  }
+}

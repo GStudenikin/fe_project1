@@ -1,0 +1,17 @@
+mixin calendar(id)
+    div.calendar(id=id)
+        div.calendar__month
+            button.calendar__month__btn(id="prev-month") arrow_back
+            span.calendar__month__current Август 2019
+            button.calendar__month__btn(id="next-month") arrow_forward
+        div.calendar__week
+            span.calendar__week__day Пн
+            span.calendar__week__day Вт
+            span.calendar__week__day Ср
+            span.calendar__week__day Чт
+            span.calendar__week__day Пт
+            span.calendar__week__day Сб
+            span.calendar__week__day Вс
+        div.calendar__days-list
+        button.calendar__clear-btn Очистить
+        button.calendar__accept-btn Применить
