@@ -1,0 +1,72 @@
+@import "colors-type.scss";
+
+.button {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 50px;
+  display: inline-block;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  text-decoration: none;
+  font-family: $fontMont;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  color: #ffffff;
+  text-transform: uppercase;
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &_next-card {
+    width: 320px;
+    height: 44px;
+
+    &::after {
+      font-family: "Material Icons";
+      content: "\e5c8";
+      font-size: 24px;
+      font-weight: normal;
+      position: absolute;
+      right: 10px;
+      top: 14px;
+    }
+  }
+  &_no-fill {
+    display: inline-block;
+    align-items: center;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    $border: 2px;
+    color: #bc9cff;
+    background: #ffffff;
+    background-clip: padding-box;
+    border: solid $border transparent;
+    border-radius: 22px;
+    &:hover {
+      opacity: 1;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      margin: -$border;
+      border-radius: inherit;
+      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+    }
+    &:hover::before {
+      opacity: 0.5;
+    }
+  }
+}
