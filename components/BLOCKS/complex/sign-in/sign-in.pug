@@ -1,0 +1,11 @@
+include /components/BLOCKS/simple/text-field/text-field.pug
+include /components/BLOCKS/simple/button/button.pug
+
+mixin sign-in()
+    div.sign-in
+        div.sign-in__header Войти
+        +text-field("email", "Email", "sign-in__email")
+        +text-field("password", "Пароль", "sign-in__password")
+        +button("#test", "Войти", ["sign-in__enter-btn", "button_next-card"])
+        p.sign-in__signup-text Нет аккаунта на Toxin?
+        +button("#test", "Создать", ["sign-in__create-btn", "button_no-fill"])
