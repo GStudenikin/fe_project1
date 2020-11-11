@@ -1,2 +1,9 @@
-mixin text-field(id, placeholder, class_name)
-    input.text-field(class=class_name type="text" id=id placeholder=placeholder)
+//- how to use:
+    +text-field(id, placeholder, class_name, date)
+    if date = 1 then add date field with mask
+
+mixin text-field(id, placeholder, class_name, date)
+    if(date)
+        input.text-field.date(class=class_name type="text" id=id placeholder=placeholder)
+    else
+        input.text-field(class=class_name type="text" id=id placeholder=placeholder)
