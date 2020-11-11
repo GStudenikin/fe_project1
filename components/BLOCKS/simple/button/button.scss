@@ -1,6 +1,8 @@
 @import "colors-type.scss";
 
 .button {
+  cursor: pointer;
+  outline: none;
   width: 100px;
   height: 40px;
   border: none;
