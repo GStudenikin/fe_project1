@@ -1,0 +1,59 @@
+@import "colors-type.scss";
+
+.radio {
+  font-style: normal;
+  &__name {
+    @extend %fontLabel;
+    margin-bottom: 13px;
+  }
+
+  &__button {
+    & + label {
+      cursor: pointer;
+    }
+  }
+
+  &__label {
+    font-weight: normal;
+    font-family: $fontMont;
+    font-size: 14px;
+    line-height: 24px;
+    color: $dark50;
+    position: relative;
+    display: inline-block;
+    left: 29.5px;
+    margin-right: 50px;
+    &::before {
+      left: -30px;
+      top: 2px;
+      width: 20px;
+      height: 20px;
+      background: #ffffff;
+      border: 1px solid $dark25;
+      box-sizing: border-box;
+    }
+    &::after {
+      top: 6px;
+      left: -26px;
+      width: 12px;
+      height: 12px;
+      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+    }
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      border-radius: 10px;
+    }
+  }
+  &__button,
+  &__button:not(:checked) + &__label::after {
+    display: none;
+  }
+  &__button:checked + &__label::before {
+    border-color: #bc9cff;
+  }
+  &__button:checked + &__label {
+    color: $dark75;
+  }
+}
